@@ -27,7 +27,7 @@ alias tcp='ss -t state all'
 Here is a v smart person talking about it if you want to learn more [smart person article](https://blog.sanctum.geek.nz/custom-commands/)
 
 
-## files and programs and shit
+## files and programs
 
 To list all file associated with a package use 
 ```
