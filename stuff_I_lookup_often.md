@@ -87,3 +87,8 @@ ssh remote@server -L 2001:127.0.0.1:80
 
 ## dot files
 here is a smart persons ones, ive not really looked through them [good dots](https://sanctum.geek.nz/cgit/dotfiles.git/about/)
+
+
+# EMAIL
+## random
+Add a <kbd> + </kbd> to your email just before the <kbd> @ </kbd>  with an arbitrary tag to tag your emails.  This can be used for filtering and other things.
