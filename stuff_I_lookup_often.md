@@ -44,11 +44,45 @@ Reading the aggregated logs of services in journalctl, remove the `-f` if you wa
 sudo journalctl -f -u {name of service}
 ```
 
+## processes and memory
+
+### turning on mem swap in ubuntu
+This is particularly helpful for things like aws instances where you bump the memory limits often.
+```
+sudo swapon --show   # if this doesnt show anything then its not on
+
+sudo fallocate -l 1G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo nano /etc/fstab  # append
+  `/swapfile swap swap defaults 0 0`
+sudo swapon --show  # or use free to check
+```
+
+Swappiness controls how likely the os is to use the swapfile
+```
+cat /proc/sys/vm/swappiness # 0 is almost only when going to die, 100 is all the time.  60 is default 10 is production.
+sudo sysctl vm.swappiness=10  # set it to 10 if you want
+```
+
+To turn it back off:
+```
+sudo swapoff -v /swapfile
+remove the line from the /etc/fstab file
+sudo rm /swapfile
+```
+
 ## NETWORKING STUFF
 
 iptables list all the rules with counters and line numbers
 ```
 sudo iptables -nvL --line-numbers
+```
+
+iptables list nat rules
+```
+sudo iptables -t nat -n -v -L
 ```
 
 allow incoming icmp pings
@@ -65,6 +99,17 @@ iptables insert a rule (insert a rule to be at position 2 in the INPUT chain.  t
 ```
 sudo iptables -I INPUT 2 -j DROP
 ```
+
+iptables add a port
+```
+sudo iptables -A INPUT -p tcp --dport 80 -m conntrack --ctstate NEW,ESABLISHED -j ACCEPT
+```
+
+iptables prerouting rule
+```
+sudo iptables -t nat -A PREROUTING -p tcp --dport 22 -j REDIRECT --to-port 2222
+```
+
 
 List the open ports on modern systems:
     - for tcp use `ss -lt` for listening or `ss -t state listening`  use `ss -t state all` for everything
