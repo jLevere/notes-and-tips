@@ -6,6 +6,18 @@ First, we are going to add a new directory on the path `C:\Users\{{user}}\AppDat
 
 In the `chrome` directory add another folder named `img`.  
 
+```
+{{release}} --|
+              |
+           (chrome)--|  <- adding this directory
+              |      |
+              |    (img)---| <- adding this directory
+              |            |
+              |       {{your image}} <- the background image you are adding
+              |
+         userContent.css  <- the config 
+```
+
 We will add a css file in the main `chrome` directory named `userContent.css`, and the image for the background in the `img` folder.
 
 As an example, I am using this `userContent.css`
