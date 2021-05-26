@@ -49,3 +49,9 @@ After this is done we need to go into firefox, and into the `about:config` secti
 Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and change it to true.
 
 Restart your browser and it should work!  
+
+
+
+This is a *really* simple idea of what you can do.  Here are some examples of nice looking ones that have js and other things in them:
+[https://tacoanon.github.io/](https://tacoanon.github.io/)
+[https://startpages.github.io/startpages/Startpage-zivallh/](https://startpages.github.io/startpages/Startpage-zivallh/)
