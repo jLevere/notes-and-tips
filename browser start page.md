@@ -1,6 +1,8 @@
 ## Customising the start page of FireFox 75ish - 88 on windows 10
 
-Only a few steps.  We are going to use userChrome/userContent.css to add a simple background image to the browser.
+This should only take a few steps.  
+
+We are going to use userChrome/userContent.css to add a simple background image to the browser.
 
 First, we are going to add a new directory on the path `C:\Users\{{user}}\AppData\Roaming\Mozilla\Firefox\Profiles\{{release}}\ ` and name it `chrome`.
 
