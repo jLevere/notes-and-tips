@@ -1,4 +1,4 @@
-## Customising the start page of FireFox >= 88 on windows 10
+## Customising the start page of FireFox 75ish - 88 on windows 10
 
 Only a few steps.  We are going to use userChrome/userContent.css to add a simple background image to the browser.
 
