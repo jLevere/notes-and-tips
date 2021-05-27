@@ -44,7 +44,7 @@ As an example, I am using this `userContent.css`
 }
 ```
 
-After this is done we need to go into firefox, and into the `about:config` section.  Just type `about:config` and it will open.  `about:about` will give you more info about what about commands can do.
+After this is done we need to go into firefox, and into the `about:config` section.  Just type `about:config` and it will open.  `about:about` will give you more info concerning what about commands can do.
 
 Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and change it to true.
 
