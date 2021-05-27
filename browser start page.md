@@ -11,11 +11,11 @@ In the `chrome` directory add another folder named `img`.
 We will add a css file in the main `chrome` directory named `userContent.css`, and the image for the background in the `img` folder.
 
 ```
-{{release}} --|
+/{{release}} --|
               |
-           (chrome)--|  <- adding this directory
+           /chrome--|  <- adding this directory
               |      |
-              |    (img)---| <- adding this directory
+              |    /img---| <- adding this directory
               |            |
               |       {{your image}} <- the background image you are adding
               |
