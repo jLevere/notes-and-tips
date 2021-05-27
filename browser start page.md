@@ -12,13 +12,13 @@ We will add a css file in the main `chrome` directory named `userContent.css`, a
 
 ```
 /{{release}} --|
-              |
-           /chrome--|  <- adding this directory
-              |      |
-              |    /img---| <- adding this directory
-              |            |
-              |       {{your image}} <- the background image you are adding
-              |
+               |
+            /chrome--|  <- adding this directory
+               |      |
+               |    /img---| <- adding this directory
+               |            |
+               |       {{your image}} <- the background image you are adding
+               |
          userContent.css  <- the config 
 ```
 
