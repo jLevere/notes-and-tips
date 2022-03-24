@@ -1,2 +1,3 @@
 # notes-and-tips
-yeah, stuff
+
+Reference sheets and notes on stuff.
