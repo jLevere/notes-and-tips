@@ -134,6 +134,10 @@ ssh remote@server -L 2001:127.0.0.1:80
 here is a smart persons ones, ive not really looked through them [good dots](https://sanctum.geek.nz/cgit/dotfiles.git/about/)
 
 
-# EMAIL
-## random
+
+# random
+## email
 Add a <kbd> + </kbd> to your email just before the <kbd> @ </kbd>  with an arbitrary tag to tag your emails.  This can be used for filtering and other things.
+
+## windows 10 stuff
+Disable the search and webcontent shown in the search.  Add a registry DWORD32 `BingSearchEnabled` with a value of 0 to the path `Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search`  Then restart.  This will disable news content and the websearch when something is not found locally.
